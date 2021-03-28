@@ -1,0 +1,10 @@
+{
+    "development": {
+      "username": "",
+      "password": "",
+      "database": "node_gama_conta_corrente",
+      "host": "192.168.0.24",
+      "port": "27017"
+    }
+  }
+  
