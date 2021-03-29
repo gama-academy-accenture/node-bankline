@@ -46,12 +46,14 @@ class PessoaService extends BaseService {
 
         return result.map(pessoa => {
             return {
+                id: pessoa.id,
                 nome: pessoa.nome,
                 cpf: pessoa.cpf,
                 login: pessoa.usuario.login,
                 saldo: pessoa.conta_corrente.saldo,
                 createdAt: pessoa.createdAt,
-                updatedAt: pessoa.updatedAt
+                updatedAt: pessoa.updatedAt,
+                active: pessoa.active
             }
         })
     }

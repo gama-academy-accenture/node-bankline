@@ -112,9 +112,9 @@ describe("Testes de PESSOA", () => {
 
             this.pessoaService = new PessoaService();
 
-            const remetente = { nome: "Usuario1", cpf: "11111111111", login: "user1", senha: "teste" }
+            const remetente = { nome: "Usuario1", cpf: "77168685350", login: "user1", senha: "teste" }
 
-            const destinatario = { nome: "Usuario2", cpf: "22222222222", login: "user2", senha: "teste" }
+            const destinatario = { nome: "Usuario2", cpf: "85460184487", login: "user2", senha: "teste" }
 
             this.pessoaOrigem = await this.pessoaService.add(remetente)
 
@@ -154,7 +154,7 @@ describe("Testes de PESSOA", () => {
 
         it("Deve lançar exceção quando uma pessoa existe com o mesmo cpf", async () => {
 
-            const payload = { nome: "REMETENTE", cpf: "11111111111", login: "remetente", senha: "teste" }
+            const payload = { nome: "Usuario1", cpf: "77168685350", login: "user1", senha: "teste" }
 
             try {
 
