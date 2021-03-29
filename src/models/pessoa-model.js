@@ -9,7 +9,7 @@
 const BaseModel = require("./base-model.js")
 const UsuarioModel = require("./usuario-model.js")
 const ContaCorrenteModel = require("./conta-corrente-model.js")
-//const CpfUtil = require("../util/cpf-util.js")
+// const CpfUtil = require("../util/cpf-util.js")
 const { cpf } = require("cpf-cnpj-validator")
 const _ = require("lodash")
 const Messages = require('../messages.js')
